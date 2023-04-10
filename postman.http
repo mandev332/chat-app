@@ -1,0 +1,13 @@
+##### USERS
+GET http://localhost:5000/users HTTP/1.1
+####
+POST http://localhost:5000/users/register HTTP/1.1
+Content-Type: application/json
+
+{
+    "username": "Javohir",
+    "gender":"male",
+    "contact":"+998914562344",
+    "password":"java5",
+    "imageLink":""
+}
