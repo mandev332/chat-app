@@ -4,5 +4,5 @@ dotenv.config();
 
 mongoose
   .connect(process.env.DB)
-  .then(() => console.log("connection"))
+  .then(() => console.log("connection DB"))
   .catch((er) => console.log(er.message));

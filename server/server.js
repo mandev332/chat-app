@@ -20,7 +20,7 @@ app.use(express.static(path.join(process.cwd(), "public")));
 
 app.use(userRouter);
 
-app.get("*", (req, res) => {
+app.get("*", async (req, res) => {
   let url = req.url.slice(1);
   if (["login", "register", "index", "admin"].includes(url))
     res.sendFile(path.join(process.cwd(), "views", url + ".html"));
