@@ -1,4 +1,4 @@
-const backendApi = "https://localhost:3300";
+const backendApi = "chat-app-production-326c.up.railway.app";
 
 async function request(route, method, body) {
   let headers = {
